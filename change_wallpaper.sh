@@ -50,8 +50,8 @@ set_wallpaper_by_display() {
   local applescript_desktop_number
   case "$display_id" in
   1) applescript_desktop_number=2 ;; # Color LCD (内蔵画面)
-  2) applescript_desktop_number=1 ;; # EV2780 (メインディスプレイ)
-  3) applescript_desktop_number=3 ;; # 27E1Q (縦画面)
+  2) applescript_desktop_number=3 ;; # 27E1Q (縦画面)
+  3) applescript_desktop_number=1 ;; # EV2780 (メインディスプレイ)
   *)
     echo "❌ エラー: 不明なディスプレイID: $display_id"
     exit 1
